@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- These columns automatically divide the proportion the more columns you add to the row -->
+    <div class="row">
+      <div class="col" style="background-color: red; border: 1px solid">
+        col
+      </div>
+      <div class="col" style="background-color: red; border: 1px solid">
+        col
+      </div>
+    </div>
+
+    <!-- Total column for a row is 12 so we can use that number to make our proportionate column -->
+    <div class="row">
+        <div class="col-6" style="background-color: green; border: 1px solid;">
+            col-6
+        </div>
+        <div class="col-3" style="background-color: purple; border: 1px solid;">
+            col-3
+        </div>
+        <div class="col-2" style="background-color: green; border: 1px solid;">
+            col-2
+        </div>
+        <div class="col-1" style="background-color: green; border: 1px solid;">
+            col-1
+        </div>
+    </div>
+    <!-- These are static columns and they don't shrink in proportion when the page is shrinked to a tablet or a phone -->
+
+    <!-- Responsive columns or Dynamic columns -->
+    <div class="row">
+        <!-- "md" means any medium device upwards will use the same proportional division (from tablet to PCs) -->
+        <!-- Smartphones will have the column take the entire row -->
+        <!-- "6" means it takes 6 proportions in the row, or half of the row -->
+        <div class="col-md-6" style="background-color: blue; border: 1px solid;">col-md-6</div>
+        <div class="col-md-6" style="background-color: blue; border: 1px solid;">col-md-6</div>
+    </div>
+    <!-- This allow the columns to shrink dynamically, but this is still a preset from bootstrap -->
+
+    <!-- Custom responsive columns -->
+    <!-- What we want here is to have 4 columns on desktop, 3 columns on tablets, and 2 columns on smartphones per row -->
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid;">col-lg-3 col-md-4 col-sm-6</div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid;">col-lg-3 col-md-4 col-sm-6</div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid;">col-lg-3 col-md-4 col-sm-6</div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid;">col-lg-3 col-md-4 col-sm-6</div>
+        <!-- What is being done here? -->
+        <!-- We set all large devices (desktops) to have 4 columns per row -->
+        <!-- We set all medium devices (tablets) to have 3 columns per row -->
+        <!-- We set all small devices (smartphones) to have 2 columns per row -->
+    </div>
+
+
+    <!-- Custom responsive columns challenge -->
+    <!-- What we want here is to have 6 columns on desktop, 4 columns on tablets, and 1 column on smartphones per row -->
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: aqua; border: 1px solid;">Challenge</div>
+        <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: aqua; border: 1px solid;">Challenge</div>
+        <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: aqua; border: 1px solid;">Challenge</div>
+        <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: aqua; border: 1px solid;">Challenge</div>
+        <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: aqua; border: 1px solid;">Challenge</div>
+        <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: aqua; border: 1px solid;">Challenge</div>
+    </div>
+  </body>
+</html>

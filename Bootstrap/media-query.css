@@ -1,0 +1,20 @@
+h1 {
+    font-size: 2rem;
+}
+
+/* This is an example of media query other than screen */
+/* The CSS would be applied when the user tries to print the page */
+@media printing {
+    h1 {
+        color: blue;
+    }
+}
+
+/* This is an example of how we can manipulate the screen size of the user */
+/* Ensuring that this CSS would apply to users using tablets or mobile phones */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+        color: red;
+    }
+}

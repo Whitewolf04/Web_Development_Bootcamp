@@ -1,0 +1,42 @@
+div {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+div.part-2 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    position: absolute;
+    /* Position absolute would make the inner divs stacked on top of each other instead of in line top down */
+    /* The last div in the code would be the closest div for the viewer (outermost of the stack) */
+}
+
+.red-2 {
+    background-color: red;
+}
+
+.yellow-2 {
+    background-color: yellow;
+    left: 20px;
+    top: 20px;
+}
+
+.blue-2 {
+    background-color: blue;
+    left: 40px;
+    top: 40px;
+}
