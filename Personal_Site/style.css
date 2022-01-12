@@ -15,61 +15,8 @@ body {
     font-weight: 300;
 }
 
-/* Introduction */
-#introduction {
-    background-color: #18678d;
-    padding: 2% 8%;
-}
-
-.profile-pic {
-    max-height: 50%;
-}
-
-.intro-text {
-    padding: 50px;
-    font-size: 1.2rem;
-}
-
-#profile-pic {
-    border-radius: 100%;
-    width: 90%;
-    height: auto;
-    object-fit: cover;
-}
-
-.profile-name {
-    font-weight: 900;
-    line-height: 1.5;
-    font-size: 3rem;
-}
-
-
-/* Education */
-#education {
-    background-color: #1e81b0;
-    padding: 2% 8% 1px;
-}
-
-.edu-text {
-    font-size: 1.2rem;
-}
-
-.school {
-    padding: 2% 5%;
-}
-
-.school-title {
-    font-weight: 500;
-}
-
-@media (max-width: 1028px) {
-    .edu-text {
-        font-size: 1rem;
-    }
-}
-
-/* Work Experience */
-#work-exp {
-    background-color: #1e81b0;
-    padding: 2% 8%;
+/* Navbar */
+.nav-item {
+    font-size: 1.1rem;
+    padding: 0 2%;
 }
